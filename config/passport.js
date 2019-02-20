@@ -1,4 +1,5 @@
 var passport = require("passport");
+const mongoose = require('mongoose');
 var LocalStrategy = require("passport-local").Strategy;
 
 // Let Passport know we want to use a Local Strategy: login with email and password.

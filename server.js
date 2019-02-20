@@ -20,11 +20,14 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+// Models and controllers
 require("./controllers/api.js")(app);
+require('./models/Users');
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, function () {
-  console.log(`===> 🌎  Listening on port ${PORT}.`, PORT);
+  console.log(`===> 🌎 ⭐️ 👽 Listening on port ${PORT}.`, PORT);
 });
 
 module.exports = app;
